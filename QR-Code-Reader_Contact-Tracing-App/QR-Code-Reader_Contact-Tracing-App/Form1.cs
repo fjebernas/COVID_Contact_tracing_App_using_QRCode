@@ -24,6 +24,8 @@ namespace QR_Code_Reader_Contact_Tracing_App
 
         bool isCameraRunning = false;
 
+        string[] infos = new string[7];
+
         private void Form1_Load(object sender, EventArgs e)
         {
             filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
@@ -67,12 +69,20 @@ namespace QR_Code_Reader_Contact_Tracing_App
                 Result result = barcodeReader.Decode((Bitmap)pictureBox.Image);
                 if (result != null)
                 {
-                    displayTxtBx.Text = result.ToString();
                     timer.Stop();
+
                     if (isCameraRunning)
-                    {
                         captureDevice.Stop();
-                    }
+
+                    infos = (result.ToString()).Split('-');
+
+                    txtBxName.Text = infos[0];
+                    txtBxAge.Text = infos[1];
+                    txtBxAddress.Text = infos[2];
+                    txtBxGender.Text = infos[3];
+                    txtBxQuesOne.Text = infos[4];
+                    txtBxQuesTwo.Text = infos[5];
+                    txtBxQuesThree.Text = infos[6];
                 }
             }
         }
