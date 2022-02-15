@@ -38,3 +38,4 @@ C:\Users\franc\source\repos\Assign#10QRCodeContactTracingApp\QR-Code-Reader_Cont
 C:\Users\franc\source\repos\Assign#10QRCodeContactTracingApp\QR-Code-Reader_Contact-Tracing-App\QR-Code-Reader_Contact-Tracing-App\obj\Debug\QR-Code-Reader_Contact-Tracing-App.csproj.CoreCompileInputs.cache
 C:\Users\franc\source\repos\Assign#10QRCodeContactTracingApp\QR-Code-Reader_Contact-Tracing-App\QR-Code-Reader_Contact-Tracing-App\obj\Debug\QR-Code-Reader_Contact-Tracing-App.exe
 C:\Users\franc\source\repos\Assign#10QRCodeContactTracingApp\QR-Code-Reader_Contact-Tracing-App\QR-Code-Reader_Contact-Tracing-App\obj\Debug\QR-Code-Reader_Contact-Tracing-App.pdb
+C:\Users\franc\source\repos\Assign#10QRCodeContactTracingApp\QR-Code-Reader_Contact-Tracing-App\QR-Code-Reader_Contact-Tracing-App\obj\Debug\QR_Code_Reader_Contact_Tracing_App.Form2.resources

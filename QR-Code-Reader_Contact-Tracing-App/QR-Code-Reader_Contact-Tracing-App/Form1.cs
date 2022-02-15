@@ -24,7 +24,6 @@ namespace QR_Code_Reader_Contact_Tracing_App
 
         bool isCameraRunning = false;
 
-        string[] infos = new string[7];
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -74,22 +73,17 @@ namespace QR_Code_Reader_Contact_Tracing_App
                     if (isCameraRunning)
                         captureDevice.Stop();
 
-                    infos = (result.ToString()).Split('-');
+                    //infos = (result.ToString()).Split('-');
 
-                    txtBxName.Text = infos[0];
-                    txtBxAge.Text = infos[1];
-                    txtBxAddress.Text = infos[2];
-                    txtBxGender.Text = infos[3];
-                    txtBxQuesOne.Text = infos[4];
-                    txtBxQuesTwo.Text = infos[5];
-                    txtBxQuesThree.Text = infos[6];
+                    var form2 = new Form2(result);
+                    form2.Show();
                 }
             }
         }
 
         private void btnStop_Click(object sender, EventArgs e)
         {
-            if (captureDevice.IsRunning)
+            if (isCameraRunning)
                 captureDevice.Stop();
 
             if (pictureBox.Image != null)
