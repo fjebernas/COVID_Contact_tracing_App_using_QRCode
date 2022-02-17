@@ -30,6 +30,7 @@ namespace QR_Code_Reader_Contact_Tracing_App
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.cboBxDevices = new System.Windows.Forms.ComboBox();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.btnStart = new System.Windows.Forms.Button();
@@ -53,8 +54,11 @@ namespace QR_Code_Reader_Contact_Tracing_App
             // 
             // pictureBox
             // 
+            this.pictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox.BackgroundImage")));
+            this.pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox.Location = new System.Drawing.Point(33, 141);
+            this.pictureBox.InitialImage = null;
+            this.pictureBox.Location = new System.Drawing.Point(35, 141);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(445, 407);
             this.pictureBox.TabIndex = 2;
@@ -62,12 +66,12 @@ namespace QR_Code_Reader_Contact_Tracing_App
             // 
             // btnStart
             // 
-            this.btnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(46)))), ((int)(((byte)(118)))));
+            this.btnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
             this.btnStart.FlatAppearance.BorderSize = 0;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStart.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(145)))), ((int)(((byte)(200)))));
-            this.btnStart.Location = new System.Drawing.Point(33, 565);
+            this.btnStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(46)))), ((int)(((byte)(118)))));
+            this.btnStart.Location = new System.Drawing.Point(35, 565);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(350, 44);
             this.btnStart.TabIndex = 3;
@@ -85,8 +89,8 @@ namespace QR_Code_Reader_Contact_Tracing_App
             this.btnStop.FlatAppearance.BorderSize = 0;
             this.btnStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStop.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(145)))), ((int)(((byte)(200)))));
-            this.btnStop.Location = new System.Drawing.Point(403, 565);
+            this.btnStop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
+            this.btnStop.Location = new System.Drawing.Point(405, 565);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(75, 44);
             this.btnStop.TabIndex = 5;
@@ -128,6 +132,8 @@ namespace QR_Code_Reader_Contact_Tracing_App
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.cboBxDevices);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing App Using QR Code";

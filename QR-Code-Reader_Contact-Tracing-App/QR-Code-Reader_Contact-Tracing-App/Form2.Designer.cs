@@ -45,9 +45,13 @@ namespace QR_Code_Reader_Contact_Tracing_App
             this.txtBxAddress = new System.Windows.Forms.TextBox();
             this.txtBxName = new System.Windows.Forms.TextBox();
             this.labelHeader = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnYES = new System.Windows.Forms.Button();
+            this.btnNO = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelName = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtBxContactNo = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label6
@@ -55,7 +59,7 @@ namespace QR_Code_Reader_Contact_Tracing_App
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
-            this.label6.Location = new System.Drawing.Point(57, 240);
+            this.label6.Location = new System.Drawing.Point(53, 274);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(589, 21);
             this.label6.TabIndex = 15;
@@ -66,7 +70,7 @@ namespace QR_Code_Reader_Contact_Tracing_App
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
-            this.label5.Location = new System.Drawing.Point(464, 169);
+            this.label5.Location = new System.Drawing.Point(542, 206);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 21);
             this.label5.TabIndex = 16;
@@ -77,7 +81,7 @@ namespace QR_Code_Reader_Contact_Tracing_App
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
-            this.label4.Location = new System.Drawing.Point(490, 108);
+            this.label4.Location = new System.Drawing.Point(416, 210);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 21);
             this.label4.TabIndex = 17;
@@ -88,7 +92,7 @@ namespace QR_Code_Reader_Contact_Tracing_App
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
-            this.label7.Location = new System.Drawing.Point(57, 339);
+            this.label7.Location = new System.Drawing.Point(53, 373);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(579, 21);
             this.label7.TabIndex = 18;
@@ -99,18 +103,18 @@ namespace QR_Code_Reader_Contact_Tracing_App
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
-            this.label9.Location = new System.Drawing.Point(58, 468);
+            this.label9.Location = new System.Drawing.Point(54, 494);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(553, 21);
+            this.label9.Size = new System.Drawing.Size(306, 21);
             this.label9.TabIndex = 19;
-            this.label9.Text = "Do you currently have any of the following conditions during this time?";
+            this.label9.Text = "Health conditions or flu-like symptoms: ";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
-            this.label8.Location = new System.Drawing.Point(57, 365);
+            this.label8.Location = new System.Drawing.Point(53, 399);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(421, 21);
             this.label8.TabIndex = 20;
@@ -121,7 +125,7 @@ namespace QR_Code_Reader_Contact_Tracing_App
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
-            this.label3.Location = new System.Drawing.Point(57, 169);
+            this.label3.Location = new System.Drawing.Point(385, 142);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 21);
             this.label3.TabIndex = 21;
@@ -132,7 +136,7 @@ namespace QR_Code_Reader_Contact_Tracing_App
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
-            this.label2.Location = new System.Drawing.Point(57, 108);
+            this.label2.Location = new System.Drawing.Point(53, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 21);
             this.label2.TabIndex = 22;
@@ -140,18 +144,18 @@ namespace QR_Code_Reader_Contact_Tracing_App
             // 
             // txtBxQuesThree
             // 
-            this.txtBxQuesThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxQuesThree.Location = new System.Drawing.Point(62, 510);
+            this.txtBxQuesThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxQuesThree.Location = new System.Drawing.Point(58, 548);
             this.txtBxQuesThree.Multiline = true;
             this.txtBxQuesThree.Name = "txtBxQuesThree";
             this.txtBxQuesThree.ReadOnly = true;
-            this.txtBxQuesThree.Size = new System.Drawing.Size(584, 96);
+            this.txtBxQuesThree.Size = new System.Drawing.Size(584, 64);
             this.txtBxQuesThree.TabIndex = 8;
             // 
             // txtBxQuesTwo
             // 
-            this.txtBxQuesTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxQuesTwo.Location = new System.Drawing.Point(61, 406);
+            this.txtBxQuesTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxQuesTwo.Location = new System.Drawing.Point(57, 440);
             this.txtBxQuesTwo.Multiline = true;
             this.txtBxQuesTwo.Name = "txtBxQuesTwo";
             this.txtBxQuesTwo.ReadOnly = true;
@@ -160,8 +164,8 @@ namespace QR_Code_Reader_Contact_Tracing_App
             // 
             // txtBxQuesOne
             // 
-            this.txtBxQuesOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxQuesOne.Location = new System.Drawing.Point(61, 283);
+            this.txtBxQuesOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxQuesOne.Location = new System.Drawing.Point(57, 317);
             this.txtBxQuesOne.Multiline = true;
             this.txtBxQuesOne.Name = "txtBxQuesOne";
             this.txtBxQuesOne.ReadOnly = true;
@@ -170,111 +174,159 @@ namespace QR_Code_Reader_Contact_Tracing_App
             // 
             // txtBxGender
             // 
-            this.txtBxGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxGender.Location = new System.Drawing.Point(544, 166);
+            this.txtBxGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxGender.Location = new System.Drawing.Point(622, 204);
             this.txtBxGender.Multiline = true;
             this.txtBxGender.Name = "txtBxGender";
             this.txtBxGender.ReadOnly = true;
-            this.txtBxGender.Size = new System.Drawing.Size(100, 32);
+            this.txtBxGender.Size = new System.Drawing.Size(67, 32);
             this.txtBxGender.TabIndex = 11;
             // 
             // txtBxAge
             // 
-            this.txtBxAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxAge.Location = new System.Drawing.Point(544, 102);
+            this.txtBxAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxAge.Location = new System.Drawing.Point(467, 204);
             this.txtBxAge.Multiline = true;
             this.txtBxAge.Name = "txtBxAge";
             this.txtBxAge.ReadOnly = true;
-            this.txtBxAge.Size = new System.Drawing.Size(100, 32);
+            this.txtBxAge.Size = new System.Drawing.Size(56, 32);
             this.txtBxAge.TabIndex = 12;
             // 
             // txtBxAddress
             // 
-            this.txtBxAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxAddress.Location = new System.Drawing.Point(134, 166);
+            this.txtBxAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxAddress.Location = new System.Drawing.Point(467, 136);
             this.txtBxAddress.Multiline = true;
             this.txtBxAddress.Name = "txtBxAddress";
             this.txtBxAddress.ReadOnly = true;
-            this.txtBxAddress.Size = new System.Drawing.Size(312, 32);
+            this.txtBxAddress.Size = new System.Drawing.Size(222, 32);
             this.txtBxAddress.TabIndex = 13;
             // 
             // txtBxName
             // 
-            this.txtBxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxName.Location = new System.Drawing.Point(151, 102);
+            this.txtBxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxName.Location = new System.Drawing.Point(147, 136);
             this.txtBxName.Multiline = true;
             this.txtBxName.Name = "txtBxName";
             this.txtBxName.ReadOnly = true;
-            this.txtBxName.Size = new System.Drawing.Size(295, 32);
+            this.txtBxName.Size = new System.Drawing.Size(213, 32);
             this.txtBxName.TabIndex = 14;
             // 
             // labelHeader
             // 
             this.labelHeader.AutoSize = true;
-            this.labelHeader.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHeader.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(145)))), ((int)(((byte)(200)))));
-            this.labelHeader.Location = new System.Drawing.Point(174, 25);
+            this.labelHeader.Location = new System.Drawing.Point(194, 57);
             this.labelHeader.Name = "labelHeader";
-            this.labelHeader.Size = new System.Drawing.Size(352, 36);
+            this.labelHeader.Size = new System.Drawing.Size(322, 33);
             this.labelHeader.TabIndex = 23;
             this.labelHeader.Text = "Contact Tracing Details";
             // 
-            // button1
+            // btnYES
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(46)))), ((int)(((byte)(118)))));
-            this.button1.Location = new System.Drawing.Point(151, 663);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(187, 44);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "YES, these are correct";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnYES.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
+            this.btnYES.FlatAppearance.BorderSize = 0;
+            this.btnYES.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnYES.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYES.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(46)))), ((int)(((byte)(118)))));
+            this.btnYES.Location = new System.Drawing.Point(151, 677);
+            this.btnYES.Name = "btnYES";
+            this.btnYES.Size = new System.Drawing.Size(187, 44);
+            this.btnYES.TabIndex = 24;
+            this.btnYES.Text = "YES, these are correct";
+            this.btnYES.UseVisualStyleBackColor = false;
+            this.btnYES.Click += new System.EventHandler(this.btnYES_Click);
             // 
-            // button2
+            // btnNO
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(46)))), ((int)(((byte)(118)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
-            this.button2.Location = new System.Drawing.Point(372, 663);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(193, 44);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "NO, these are incorrect";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnNO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(46)))), ((int)(((byte)(118)))));
+            this.btnNO.FlatAppearance.BorderSize = 0;
+            this.btnNO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNO.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
+            this.btnNO.Location = new System.Drawing.Point(372, 677);
+            this.btnNO.Name = "btnNO";
+            this.btnNO.Size = new System.Drawing.Size(193, 44);
+            this.btnNO.TabIndex = 24;
+            this.btnNO.Text = "NO, these are incorrect";
+            this.btnNO.UseVisualStyleBackColor = false;
+            this.btnNO.Click += new System.EventHandler(this.btnNO_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(145)))), ((int)(((byte)(200)))));
-            this.label1.Location = new System.Drawing.Point(234, 627);
+            this.label1.Location = new System.Drawing.Point(234, 641);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(244, 22);
             this.label1.TabIndex = 25;
             this.label1.Text = "Are these details correct?";
+            // 
+            // labelName
+            // 
+            this.labelName.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
+            this.labelName.Location = new System.Drawing.Point(194, 23);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(322, 33);
+            this.labelName.TabIndex = 23;
+            this.labelName.Text = "\"Name\"\'s";
+            this.labelName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
+            this.label10.Location = new System.Drawing.Point(53, 515);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(348, 21);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "(e.g. fever, cough, breathing difficulty, etc.)";
+            // 
+            // txtBxContactNo
+            // 
+            this.txtBxContactNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxContactNo.Location = new System.Drawing.Point(169, 204);
+            this.txtBxContactNo.Multiline = true;
+            this.txtBxContactNo.Name = "txtBxContactNo";
+            this.txtBxContactNo.ReadOnly = true;
+            this.txtBxContactNo.Size = new System.Drawing.Size(191, 32);
+            this.txtBxContactNo.TabIndex = 14;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
+            this.label11.Location = new System.Drawing.Point(53, 206);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(110, 21);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Contact no.:";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(27)))), ((int)(((byte)(37)))));
-            this.ClientSize = new System.Drawing.Size(716, 738);
+            this.ClientSize = new System.Drawing.Size(726, 758);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnNO);
+            this.Controls.Add(this.btnYES);
+            this.Controls.Add(this.labelName);
             this.Controls.Add(this.labelHeader);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label7);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtBxQuesThree);
             this.Controls.Add(this.txtBxQuesTwo);
@@ -282,7 +334,9 @@ namespace QR_Code_Reader_Contact_Tracing_App
             this.Controls.Add(this.txtBxGender);
             this.Controls.Add(this.txtBxAge);
             this.Controls.Add(this.txtBxAddress);
+            this.Controls.Add(this.txtBxContactNo);
             this.Controls.Add(this.txtBxName);
+            this.MinimizeBox = false;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing Details";
@@ -310,8 +364,12 @@ namespace QR_Code_Reader_Contact_Tracing_App
         private System.Windows.Forms.TextBox txtBxAddress;
         private System.Windows.Forms.TextBox txtBxName;
         private System.Windows.Forms.Label labelHeader;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnYES;
+        private System.Windows.Forms.Button btnNO;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtBxContactNo;
+        private System.Windows.Forms.Label label11;
     }
 }

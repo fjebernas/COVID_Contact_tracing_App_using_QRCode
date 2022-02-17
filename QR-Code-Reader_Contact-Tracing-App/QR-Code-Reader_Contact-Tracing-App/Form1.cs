@@ -68,12 +68,7 @@ namespace QR_Code_Reader_Contact_Tracing_App
                 Result result = barcodeReader.Decode((Bitmap)pictureBox.Image);
                 if (result != null)
                 {
-                    timer.Stop();
-
-                    if (isCameraRunning)
-                        captureDevice.Stop();
-
-                    //infos = (result.ToString()).Split('-');
+                    DevicesReset();
 
                     var form2 = new Form2(result);
                     form2.Show();
@@ -82,6 +77,11 @@ namespace QR_Code_Reader_Contact_Tracing_App
         }
 
         private void btnStop_Click(object sender, EventArgs e)
+        {
+            DevicesReset();
+        }
+
+        void DevicesReset()
         {
             if (isCameraRunning)
                 captureDevice.Stop();
