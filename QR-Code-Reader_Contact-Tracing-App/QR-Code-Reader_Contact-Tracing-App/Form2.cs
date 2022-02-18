@@ -135,5 +135,19 @@ namespace QR_Code_Reader_Contact_Tracing_App
             }
             return NameSurname;
         }
+
+        private void btn_MouseEnter(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+
+            btn.Font = new Font("Century Gothic", 13);
+        }
+
+        private void btn_MouseLeave(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+
+            btn.Font = new Font("Century Gothic", 12);
+        }
     }
 }

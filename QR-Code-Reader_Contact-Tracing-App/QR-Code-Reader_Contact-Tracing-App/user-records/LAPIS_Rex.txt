@@ -1,23 +1,23 @@
 ---------------Contact Tracing using QR Code---------------
 
 
-Time submitted: Friday, Feb 18 2022, 06:07:27 pm
+Time submitted: Friday, Feb 18 2022, 06:09:24 pm
 
 USER'S DETAILS:
 
-First name: Francis Joseph
-Last name: Bernas
-Age:  25
-Address:  1312A Int.6 Masinop St. Tondo, Manila
+First name: Rex
+Last name: Lapis
+Age:  40
+Address:  Wangsheng Parlor Liyue, TYV
 Gender: Male
-Contact no.:  09518293922
+Contact no.:  09512936421
 
 USER'S ANSWERS:
 
 1. Have you traveled outside the country anytime from last month until now?
-Answer: No
+Answer: Yes
 2. Have you come into contact with anyone who has traveled outside your country between the period of last month until now?
-Answer: No
+Answer: Yes
 3. Health conditions or flu-like symptoms: (e.g. fever, cough, breathing difficulty, etc.)
-Answer: None
+Answer: Cough and difficulty breathing
 

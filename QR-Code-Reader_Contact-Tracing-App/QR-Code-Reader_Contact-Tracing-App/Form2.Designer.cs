@@ -234,13 +234,15 @@ namespace QR_Code_Reader_Contact_Tracing_App
             this.btnYES.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnYES.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYES.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(46)))), ((int)(((byte)(118)))));
-            this.btnYES.Location = new System.Drawing.Point(151, 677);
+            this.btnYES.Location = new System.Drawing.Point(124, 677);
             this.btnYES.Name = "btnYES";
-            this.btnYES.Size = new System.Drawing.Size(187, 44);
+            this.btnYES.Size = new System.Drawing.Size(214, 44);
             this.btnYES.TabIndex = 24;
             this.btnYES.Text = "YES, these are correct";
             this.btnYES.UseVisualStyleBackColor = false;
             this.btnYES.Click += new System.EventHandler(this.btnYES_Click);
+            this.btnYES.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.btnYES.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // btnNO
             // 
@@ -251,11 +253,13 @@ namespace QR_Code_Reader_Contact_Tracing_App
             this.btnNO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(216)))), ((int)(((byte)(231)))));
             this.btnNO.Location = new System.Drawing.Point(372, 677);
             this.btnNO.Name = "btnNO";
-            this.btnNO.Size = new System.Drawing.Size(193, 44);
+            this.btnNO.Size = new System.Drawing.Size(232, 44);
             this.btnNO.TabIndex = 24;
             this.btnNO.Text = "NO, these are incorrect";
             this.btnNO.UseVisualStyleBackColor = false;
             this.btnNO.Click += new System.EventHandler(this.btnNO_Click);
+            this.btnNO.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.btnNO.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // label1
             // 

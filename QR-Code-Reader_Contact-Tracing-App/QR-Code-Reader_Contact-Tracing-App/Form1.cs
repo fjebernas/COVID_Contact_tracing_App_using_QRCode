@@ -107,5 +107,35 @@ namespace QR_Code_Reader_Contact_Tracing_App
 
             isCameraRunning = false;
         }
+
+        private void btn_MouseEnter(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+
+            if (!isCameraRunning)
+            {
+                btn.BackColor = Color.White;
+                btn.ForeColor = Color.FromArgb(18, 46, 118);
+                btn.Font = new Font("Century Gothic", 16);
+            } else
+            {
+                btn.Font = new Font("Century Gothic", 16);
+            }
+        }
+
+        private void btn_MouseLeave(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+
+            if (!isCameraRunning)
+            {
+                btn.BackColor = Color.FromArgb(199, 216, 231);
+                btn.ForeColor = Color.FromArgb(18, 46, 118);
+                btn.Font = new Font("Century Gothic", 14);
+            } else
+            {
+                btn.Font = new Font("Century Gothic", 14);
+            }
+        }
     }
 }
