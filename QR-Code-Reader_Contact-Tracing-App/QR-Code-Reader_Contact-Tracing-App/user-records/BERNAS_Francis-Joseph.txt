@@ -1,0 +1,23 @@
+---------------Contact Tracing using QR Code---------------
+
+
+Time submitted: Friday, Feb 18 2022, 10:13:28 am
+
+USER'S DETAILS:
+
+First name: Francis Joseph
+Last name: Bernas
+Age:  25
+Address:  1312A Int.6 Masinop St. Tondo, Manila
+Gender: Male
+Contact no.:  09518293922
+
+USER'S ANSWERS:
+
+1. Have you traveled outside the country anytime from last month until now?
+Answer: No
+2. Have you come into contact with anyone who has traveled outside your country between the period of last month until now?
+Answer: No
+3. Health conditions or flu-like symptoms: (e.g. fever, cough, breathing difficulty, etc.)
+Answer: None
+

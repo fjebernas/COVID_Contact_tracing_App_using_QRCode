@@ -38,13 +38,28 @@ namespace QR_Code_Reader_Contact_Tracing_App
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            captureDevice = new VideoCaptureDevice(filterInfoCollection[cboBxDevices.SelectedIndex].MonikerString);
-            captureDevice.NewFrame += CaptureDevice_NewFrame;
-            captureDevice.Start();
+            if (!isCameraRunning)
+            {
+                captureDevice = new VideoCaptureDevice(filterInfoCollection[cboBxDevices.SelectedIndex].MonikerString);
+                captureDevice.NewFrame += CaptureDevice_NewFrame;
+                captureDevice.Start();
 
-            isCameraRunning = true;
+                isCameraRunning = true;
 
-            timer.Start();
+                timer.Start();
+
+                btnStart.BackColor = Color.FromArgb(18, 46, 118);
+                btnStart.ForeColor = Color.FromArgb(199, 216, 231);
+                btnStart.Text = "Stop";
+            } 
+            else if (isCameraRunning)
+            {
+                DevicesReset();
+
+                btnStart.BackColor = Color.FromArgb(199, 216, 231);
+                btnStart.ForeColor = Color.FromArgb(18, 46, 118);
+                btnStart.Text = "Start";
+            }
         }
 
         private void CaptureDevice_NewFrame(object sender, AForge.Video.NewFrameEventArgs eventArgs)
@@ -72,13 +87,12 @@ namespace QR_Code_Reader_Contact_Tracing_App
 
                     var form2 = new Form2(result);
                     form2.Show();
+
+                    btnStart.BackColor = Color.FromArgb(199, 216, 231);
+                    btnStart.ForeColor = Color.FromArgb(18, 46, 118);
+                    btnStart.Text = "Start";
                 }
             }
-        }
-
-        private void btnStop_Click(object sender, EventArgs e)
-        {
-            DevicesReset();
         }
 
         void DevicesReset()
